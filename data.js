@@ -98,5 +98,47 @@ const allProducts = [
         price: 35,
         image: "https://via.placeholder.com/300x200?text=دوغ",
         category: "drinks"
+    },
+    {
+        id: 15,
+        name: "آب معدن",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/milkool_caco.jpg",
+        category: "drinks"
+    },
+    {
+        id: 16,
+        name: "آبمیوه پرتقا",
+        price: 60,
+        image: "https://via.placeholder.com/300x200?text=آبمیوه",
+        category: "drinks"
+    },
+    {
+        id: 17,
+        name: "نوشابه زنجبیل",
+        price: 55,
+        image: "https://via.placeholder.com/300x200?text=نوشابه+زنج",
+        category: "drinks"
+    },
+    {
+        id: 18,
+        name: "چای س",
+        price: 40,
+        image: "https://via.placeholder.com/300x200?text=چای",
+        category: "drinks"
+    },
+    {
+        id: 19,
+        name: "قهوه آما",
+        price: 70,
+        image: "https://via.placeholder.com/300x200?text=قهوه+آ",
+        category: "drinks"
+    },
+    {
+        id: 20,
+        name: "نوشابه ماءال",
+        price: 50,
+        image: "https://via.placeholder.com/300x200?text=ماءالش",
+        category: "drinks"
     }
 ];
