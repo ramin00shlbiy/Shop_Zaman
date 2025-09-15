@@ -137,7 +137,7 @@ const allProducts = [
         id: 20,
         name: "فانتا / Fanta",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/fanta_bootal-big.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/fanta_Bootal-big.jpg",
         category: "drinks"
     },
     {
@@ -312,14 +312,14 @@ const allProducts = [
         id: 44,
         name: "STING",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/STIiNG_A.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/STING_A.jpg",
         category: "drinks"
     },
     {
         id: 45,
         name: "STING",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/STING_g0ld.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/STING_gold.jpg",
         category: "drinks"
     },
     {
