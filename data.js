@@ -2,7 +2,7 @@
 const allProducts = [
     {
         id: 1,
-        name: "نوشابه کوکاکولا",
+        name: "500مانستر/monnster",
         price: 50,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/milkool_caco.jpg",
         category: "drinks"
