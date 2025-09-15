@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خوراکه فروشی برادارن آنلاین</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="data.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .shop-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .search-bar {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            font-size: 16px;
+            outline: none;
+        }
+        
+        .search-bar input:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+        }
+        
+        .menu-toggle {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            border-radius: 2px;
+        }
+        
+        .filter-sidebar {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background: white;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: left 0.3s ease;
+            z-index: 1001;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .filter-sidebar.open {
+            left: 0;
+        }
+        
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .close-filter {
+            background: #F44336;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .filter-category {
+            margin-bottom: 15px;
+        }
+        
+        .filter-category h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .filter-option {
+            display: block;
+            padding: 8px 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .filter-option:hover {
+            background: #f0f0f0;
+        }
+        
+        .filter-option.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .filter-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .filter-overlay.open {
+            display: block;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .product-info p {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .add-to-cart {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+        
+        .add-to-cart:hover {
+            background: #388E3C;
+        }
+        
+        /* چت داخلی */
+        .chat-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        
+        .chat-button {
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: shake 2s infinite;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            2% { transform: rotate(-10deg); }
+            4% { transform: rotate(10deg); }
+            6% { transform: rotate(-10deg); }
+            8% { transform: rotate(10deg); }
+            10% { transform: rotate(0deg); }
+        }
+        
+        .chat-options {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            width: 150px;
+        }
+        
+        .chat-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .chat-option:hover {
+            background: #f5f5f5;
+        }
+        
+        /* سبد خرید */
+        .cart-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .cart-button {
+            background: #FF5722;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-7px); }
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #F44336;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .cart-sidebar {
+            position: fixed;
+            top: 0;
+            right: -350px;
+            width: 350px;
+            height: 100%;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease;
+            z-index: 1001;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .close-cart {
+            background: #F44336;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .cart-sidebar.open {
+            right: 0;
+        }
+        
+        .cart-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .cart-overlay.open {
+            display: block;
+        }
+        
+        .cart-items {
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .cart-item-info {
+            flex: 1;
+        }
+        
+        .cart-item-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .quantity-btn {
+            background: #f0f0f0;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .quantity-btn:hover {
+            background: #e0e0e0;
+        }
+        
+        .item-quantity {
+            font-weight: bold;
+            min-width: 20px;
+            text-align: center;
+        }
+        
+        .remove-from-cart {
+            background: #F44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .checkout-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            width: 100%;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        /* فرم ثبت سفارش */
+        .order-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group label::after {
+            content: " *";
+            color: red;
+        }
+        
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        /* استایل دکمه دریافت موقعیت */
+        .location-btn {
+            background: #4285F4;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .location-status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+        
+        .location-success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+        
+        .location-error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+        
+        .map-preview {
+            height: 200px;
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            display: none;
+            border: 1px solid #ddd;
+        }
+        
+        .location-link {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #1976d2;
+            font-weight: bold;
+        }
+        
+        .test-location {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .error-message {
+            color: #F44336;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        /* استایل برای محصولات فیلتر شده */
+        .product-card.hidden {
+            display: none;
+        }
+        
+        /* نوتیفیکیشن */
+        .notification {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #4CAF50;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+            pointer-events: none;
+            text-align: center;
+            min-width: 250px;
+        }
+        
+        .notification.show {
+            opacity: 1;
+        }
+        
+        /* دکمه لغو در سبد خرید */
+        .cancel-item {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="shop-header">
+            <h1>خوراکه فروشی برادارن</h1>
+            <p>خوراکه فروشی برادارن با بهترین کیفیت در خدمت شما عزیزان آنلاین خرید کنید
+            24 ساعته فعال Active هستیم</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="جستجوی محصولات...">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="products-grid" id="products-container">
+            <!-- محصولات به صورت خودکار اینجا نمایش داده می‌شوند -->
+        </div>
+        
+        <div class="order-form" id="orderForm">
+            <h2>تکمیل اطلاعات سفارش</h2>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="name">نام کامل:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError">لطفاً نام خود را وارد کنید</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">شماره تلفن:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error-message" id="phoneError">لطفاً شماره تلفن خود را وارد کنید</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">آدرس کامل:</label>
+                    <textarea id="address" name="address" required></textarea>
+                    <div class="error-message" id="addressError">لطفاً آدرس خود را وارد کنید</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="delivery">نحوه تحویل:</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="delivery">ارسال به آدرس</option>
+                        <option value="pickup">تحویل در دکان</option>
+                    </select>
+                    <div class="error-message" id="deliveryError">لطفاً نحوه تحویل را انتخاب کنید</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">جزییات اضافی (اختیاری):</label>
+                    <textarea id="details" name="details" placeholder="ملاحظات خاص یا توضیحات اضافی"></textarea>
+                </div>
+                
+                <!-- بخش دریافت موقعیت مکانی -->
+                <div class="form-group">
+                    <label>موقعیت مکانی:</label>
+                    <button type="button" class="location-btn" id="getLocationBtn">
+                        📍 دریافت موقعیت مکانی
+                    </button>
+                    <div id="locationStatus" class="location-status"></div>
+                    <div id="mapPreview" class="map-preview"></div>
+                    <a id="locationLink" class="location-link" target="_blank" style="display: none;">مشاهده موقعیت در نقشه</a>
+                    <span id="testLocation" class="test-location" style="display: none;">برای چک کردن روی لینک بالا کلیک کنید</span>
+                    
+                    <!-- این فیلد برای ارسال لینک نقشه استفاده می‌شود -->
+                    <input type="hidden" id="locationData" name="موقعیت مکانی">
+                </div>
+                
+                <input type="hidden" id="orderDetails" name="orderDetails">
+                <input type="hidden" id="orderTotal" name="orderTotal">
+                
+                <button type="submit" class="checkout-btn" id="submitOrderBtn">ثبت نهایی سفارش</button>
+            </form>
+        </div>
+        
+        <div class="loading" id="loading">
+            <p>در حال ثبت سفارش...</p>
+        </div>
+        
+        <div class="success-message" id="successMessage">
+            <h3>✅ سفارش شما با موفقیت ثبت شد!</h3>
+            <p>به زودی با شما تماس خواهیم گرفت.</p>
+        </div>
+    </div>
+
+    <!-- منوی فیلتر محصولات -->
+    <div class="filter-overlay" id="filterOverlay"></div>
+    <div class="filter-sidebar" id="filterSidebar">
+        <div class="filter-header">
+            <h2>فیلتر محصولات</h2>
+            <button class="close-filter" id="closeFilter">✕</button>
+        </div>
+        <div class="filter-category">
+            <h3>دسته‌بندی محصولات</h3>
+            <div class="filter-option active" data-category="all">همه محصولات</div>
+            <div class="filter-option" data-category="drinks">نوشیدنی‌ها</div>
+            <div class="filter-option" data-category="foods">خوراکی‌ها</div>
+            <div class="filter-option" data-category="hygiene">بهداشتی</div>
+            <div class="filter-option" data-category="snacks">تنقلات</div>
+        </div>
+    </div>
+
+    <!-- سبد خرید -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>سبد خرید</h2>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div id="cartTotal" style="margin-top: 20px; font-weight: bold;"></div>
+        <button class="checkout-btn" id="checkoutButton">تکمیل سفارش</button>
+    </div>
+
+    <!-- چت داخلی -->
+    <div class="chat-container">
+        <div class="chat-button" id="chatButton">🎧</div>
+        <div class="chat-options" id="chatOptions">
+            <div class="chat-option" id="callOption">
+                <i class="fas fa-phone"></i>
+                <span>تماس</span>
+            </div>
+            <div class="chat-option" id="chatOption">
+                <i class="fab fa-whatsapp"></i>
+                <span>چت واتساپ</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- آیکون سبد خرید -->
+    <div class="cart-container">
+        <div class="cart-button" id="cartButton">
+            <i class="fas fa-shopping-cart"></i>
+            <div class="cart-count" id="cartCount">0</div>
+        </div>
+    </div>
+
+    <!-- نوتیفیکیشن -->
+    <div class="notification" id="notification">محصول به سبد خرید اضافه شد!</div>
+
+    <script>
+        // تنظیمات بات تلگرام
+        const TELEGRAM_BOT_TOKEN = '8274421553:AAE4UISpQ5vpx3OpLRx3jQvJvSlkLJt43iA';
+        const TELEGRAM_CHAT_ID = '7912053361';
+        
+        // مدیریت سبد خرید
+        let cart = [];
+        let userLocation = null;
+        let currentCategory = 'all';
+        
+        // صبر می‌کنیم تا DOM کاملاً لود شود
+        document.addEventListener('DOMContentLoaded', function() {
+            // مقداردهی اولیه
+            renderProducts();
+            updateCart();
+            
+            // مدیریت جستجو
+            document.getElementById('searchInput').addEventListener('input', filterProducts);
+            
+            // سایر event listenerها
+            document.getElementById('cartButton').addEventListener('click', openCart);
+            document.getElementById('cartOverlay').addEventListener('click', closeCart);
+            document.getElementById('closeCart').addEventListener('click', closeCart);
+            document.getElementById('checkoutButton').addEventListener('click', showOrderForm);
+            
+            // مدیریت چت
+            document.getElementById('chatButton').addEventListener('click', toggleChatOptions);
+            document.getElementById('callOption').addEventListener('click', makeCall);
+            document.getElementById('chatOption').addEventListener('click', startChat);
+            
+            // مدیریت موقعیت مکانی
+            document.getElementById('getLocationBtn').addEventListener('click', getLocation);
+            
+            // مدیریت فرم
+            document.getElementById('checkoutForm').addEventListener('submit', handleFormSubmit);
+            
+            // مدیریت منوی فیلتر
+            document.getElementById('menuToggle').addEventListener('click', openFilterMenu);
+            document.getElementById('closeFilter').addEventListener('click', closeFilterMenu);
+            document.getElementById('filterOverlay').addEventListener('click', closeFilterMenu);
+            
+            // مدیریت انتخاب فیلتر
+            document.querySelectorAll('.filter-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    selectFilterCategory(this.dataset.category);
+                });
+            });
+            
+            // بستن منوهای باز وقتی کاربر در خارج از آنها کلیک می‌کند
+            document.addEventListener('click', function(event) {
+                const chatOptions = document.getElementById('chatOptions');
+                const chatButton = document.getElementById('chatButton');
+                
+                if (chatOptions.style.display === 'flex' && !chatOptions.contains(event.target) && !chatButton.contains(event.target)) {
+                    chatOptions.style.display = 'none';
+                }
+            });
+            
+            // اعتبارسنجی فیلدهای فرم
+            setupFormValidation();
+        });
+        
+        // تابع برای نمایش محصولات
+        function renderProducts() {
+            const container = document.getElementById('products-container');
+            
+            // پاک کردن محتوای قبلی
+            container.innerHTML = '';
+            
+            // فیلتر کردن محصولات بر اساس دسته‌بندی
+            let filteredProducts = allProducts;
+            if (currentCategory !== 'all') {
+                filteredProducts = allProducts.filter(product => product.category === currentCategory);
+            }
+            
+            // ساخت محصولات
+            filteredProducts.forEach(product => {
+                // ساخت کارت محصول
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.dataset.name = product.name;
+                productCard.dataset.category = product.category;
+                
+                // پر کردن اطلاعات
+                productCard.innerHTML = 
+                    `<div class="product-image" style="background-image: url('${product.image}')"></div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p>${product.price} افغانی</p>
+                        <button class="add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}">
+                            افزودن به سبد خرید
+                        </button>
+                    </div>`;
+                
+                // اضافه به صفحه
+                container.appendChild(productCard);
+            });
+            
+            // اضافه کردن event listeners
+            attachEventListeners();
+        }
+        
+        // تابع برای اضافه کردن event listeners به محصولات
+        function attachEventListeners() {
+            // اضافه کردن event listeners به دکمه‌های جدید
+            document.querySelectorAll('.add-to-cart').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    addToCart(
+                        this.dataset.name, 
+                        parseInt(this.dataset.price), 
+                        this.dataset.id
+                    );
+                });
+            });
+        }
+        
+        // نمایش نوتیفیکیشن
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+        
+        function addToCart(name, price, id) {
+            // بررسی آیا محصول از قبل در سبد وجود دارد
+            const existingItemIndex = cart.findIndex(item => item.id === id);
+            
+            if (existingItemIndex !== -1) {
+                // اگر محصول وجود دارد، تعداد را افزایش می‌دهیم
+                cart[existingItemIndex].quantity += 1;
+            } else {
+                // اگر محصول وجود ندارد، جدید اضافه می‌کنیم
+                cart.push({ id, name, price, quantity: 1 });
+            }
+            
+            updateCart();
+            
+            // نمایش نوتیفیکیشن به جای alert
+            showNotification(`${name} به سبد خرید اضافه شد!`);
+            
+            // انیمیشن سبد خرید
+            animateCart();
+        }
+        
+        function animateCart() {
+            const cartButton = document.getElementById('cartButton');
+            cartButton.classList.remove('bounce');
+            void cartButton.offsetWidth; // Trigger reflow
+            cartButton.classList.add('bounce');
+        }
+        
+        function increaseQuantity(id) {
+            const itemIndex = cart.findIndex(item => item.id === id);
+            if (itemIndex !== -1) {
+                cart[itemIndex].quantity += 1;
+                updateCart();
+            }
+        }
+        
+        function decreaseQuantity(id) {
+            const itemIndex = cart.findIndex(item => item.id === id);
+            if (itemIndex !== -1) {
+                if (cart[itemIndex].quantity > 1) {
+                    cart[itemIndex].quantity -= 1;
+                } else {
+                    // اگر تعداد ۱ است، حذف می‌کنیم
+                    removeItemFromCart(id);
+                }
+                updateCart();
+            }
+        }
+        
+        function removeItemFromCart(id) {
+            const itemIndex = cart.findIndex(item => item.id === id);
+            if (itemIndex !== -1) {
+                cart.splice(itemIndex, 1);
+                updateCart();
+            }
+        }
+        
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            const cartCount = document.getElementById('cartCount');
+            
+            cartItems.innerHTML = '';
+            let total = 0;
+            let count = 0;
+            
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                count += item.quantity;
+                
+                const cartItemElement = document.createElement('div');
+                cartItemElement.className = 'cart-item';
+                cartItemElement.innerHTML = 
+                    `<div class="cart-item-info">
+                        <div>${item.name}</div>
+                        <div>${item.price} افغانی</div>
+                    </div>
+                    <div class="cart-item-controls">
+                        <button class="cancel-item" data-id="${item.id}">لغو</button>
+                        <button class="quantity-btn" data-id="${item.id}" data-action="decrease">-</button>
+                        <span class="item-quantity">${item.quantity}</span>
+                        <button class="quantity-btn" data-id="${item.id}" data-action="increase">+</button>
+                    </div>`;
+                
+                // اضافه کردن event listener برای دکمه‌های افزایش و کاهش
+                const increaseBtn = cartItemElement.querySelector('[data-action="increase"]');
+                const decreaseBtn = cartItemElement.querySelector('[data-action="decrease"]');
+                const cancelBtn = cartItemElement.querySelector('.cancel-item');
+                
+                increaseBtn.addEventListener('click', function() {
+                    const itemId = this.getAttribute('data-id');
+                    increaseQuantity(itemId);
+                });
+                
+                decreaseBtn.addEventListener('click', function() {
+                    const itemId = this.getAttribute('data-id');
+                    decreaseQuantity(itemId);
+                });
+                
+                cancelBtn.addEventListener('click', function() {
+                    const itemId = this.getAttribute('data-id');
+                    removeItemFromCart(itemId);
+                });
+                
+                cartItems.appendChild(cartItemElement);
+            });
+            
+            cartTotal.textContent = `مجموع: ${total} افغانی`;
+            cartCount.textContent = count;
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p>سبد خرید شما خالی است</p>';
+            }
+        }
+        
+        function openCart() {
+            document.getElementById('cartSidebar').classList.add('open');
+            document.getElementById('cartOverlay').classList.add('open');
+        }
+        
+        function closeCart() {
+            document.getElementById('cartSidebar').classList.remove('open');
+            document.getElementById('cartOverlay').classList.remove('open');
+        }
+        
+        function showOrderForm() {
+            if (cart.length === 0) {
+                showNotification('سبد خرید شما خالی است');
+                return;
+            }
+            
+            closeCart();
+            document.getElementById('orderForm').style.display = 'block';
+            
+            // اسکرول به فرم
+            document.getElementById('orderForm').scrollIntoView({ behavior: 'smooth' });
+            
+            // پر کردن اطلاعات سفارش برای ارسال
+            let orderDetails = '';
+            let total = 0;
+            
+            cart.forEach(item => {
+                orderDetails += `${item.name} - ${item.price} افغانی × ${item.quantity}\n`;
+                total += item.price * item.quantity;
+            });
+            
+            document.getElementById('orderDetails').value = orderDetails;
+            document.getElementById('orderTotal').value = `${total} افغانی`;
+        }
+        
+        // مدیریت گزینه‌های چت
+        function toggleChatOptions() {
+            const chatOptions = document.getElementById('chatOptions');
+            chatOptions.style.display = chatOptions.style.display === 'flex' ? 'none' : 'flex';
+        }
+        
+        function makeCall() {
+            window.location.href = 'tel:+93747811821'; // شماره تلفن خود را جایگزین کنید
+            toggleChatOptions();
+        }
+        
+        function startChat() {
+            window.open('https://wa.me/+93747811821', '_blank'); // شماره واتساپ خود را جایگزین کنید
+            toggleChatOptions();
+        }
+        
+        // دریافت موقعیت مکانی کاربر
+        function getLocation() {
+            const locationStatus = document.getElementById('locationStatus');
+            const getLocationBtn = document.getElementById('getLocationBtn');
+            const locationLink = document.getElementById('locationLink');
+            const testLocation = document.getElementById('testLocation');
+            
+            locationStatus.className = 'location-status';
+            locationStatus.textContent = 'در حال دریافت موقعیت...';
+            locationStatus.style.display = 'block';
+            getLocationBtn.disabled = true;
+            getLocationBtn.textContent = '📍 در حال دریافت موقعیت...';
+            
+            if (!navigator.geolocation) {
+                locationStatus.textContent = 'تلفن شما از دریافت موقعیت پشتیبانی نمی‌کند.';
+                locationStatus.classList.add('location-error');
+                getLocationBtn.disabled = false;
+                getLocationBtn.textContent = '📍 دریافت موقعیت مکانی';
+                return;
+            }
+            
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    // موفقیت‌آمیز
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    
+                    userLocation = { latitude, longitude };
+                    
+                    // ایجاد geo URI - این لینک مستقیماً اپلیکیشن Maps را باز می‌کند
+                    const geoUri = `geo:${latitude},${longitude}?q=${latitude},${longitude}`;
+                    
+                    // ایجاد لینک برای Google Maps به عنوان fallback
+                    const googleMapUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+                    
+                    // ذخیره geo URI در فild مخفی - این لینک در پیام تلگرام نمایش داده می‌شود
+                    document.getElementById('locationData').value = 
+                        `موقعیت مشتری: ${geoUri} (یا ${googleMapUrl})`;
+                    
+                    // نمایش پیام موفقیت
+                    locationStatus.textContent = 'موقعیت شما با موفقیت دریافت شد.';
+                    locationStatus.classList.add('location-success');
+                    
+                    // نمایش پیش‌نمایش نقشه
+                    const mapPreview = document.getElementById('mapPreview');
+                    mapPreview.style.display = 'block';
+                    mapPreview.innerHTML = 
+                        `<iframe width="100%" height="100%" frameborder="0" style="border:0" 
+                         src="https://www.openstreetmap.org/export/embed.html?bbox=${longitude-0.01}%2C${latitude-0.01}%2C${longitude+0.01}%2C${latitude+0.01}&amp;layer=mapnik&amp;marker=${latitude}%2C${longitude}" allowfullscreen></iframe>`;
+                    
+                    // نمایش لینک موقعیت برای تست
+                    locationLink.href = geoUri;
+                    locationLink.textContent = '📍 باز کردن موقعیت در  MAP نقشه';
+                    locationLink.style.display = 'block';
+                    testLocation.style.display = 'block';
+                    
+                    getLocationBtn.textContent = '📍 موقعیت دریافت شد';
+                },
+                function(error) {
+                    // خطا
+                    let errorMessage;
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMessage = "دسترسی به موقعیت مکانی لغوه شد. لطفاً مجوز دسترسی MAP را فعال کنید.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMessage = "اطلاعات موقعیت در دسترس نیست.";
+                            break;
+                        case error.TIMEOUT:
+                            errorMessage = "دریافت موقعیت وقت گیر شد.";
+                            break;
+                        default:
+                            errorMessage = "خطای ناشناخت در دریافت موقعیت.";
+                            break;
+                    }
+                    
+                    locationStatus.textContent = errorMessage;
+                    locationStatus.classList.add('location-error');
+                    getLocationBtn.disabled = false;
+                    getLocationBtn.textContent = '📍 دریافت موقعیت مکانی';
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 60000
+                }
+            );
+        }
+        
+        // فیلتر کردن محصولات بر اساس جستجو
+        function filterProducts() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                const productName = card.getAttribute('data-name').toLowerCase();
+                if (productName.includes(searchTerm)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+        
+        // باز کردن منوی فیلتر
+        function openFilterMenu() {
+            document.getElementById('filterSidebar').classList.add('open');
+            document.getElementById('filterOverlay').classList.add('open');
+        }
+        
+        // بستن منوی فیلتر
+        function closeFilterMenu() {
+            document.getElementById('filterSidebar').classList.remove('open');
+            document.getElementById('filterOverlay').classList.remove('open');
+        }
+        
+        // انتخاب دسته‌بندی فیلتر
+        function selectFilterCategory(category) {
+            currentCategory = category;
+            
+            // آپدیت وضعیت فعال در منو
+            document.querySelectorAll('.filter-option').forEach(option => {
+                if (option.dataset.category === category) {
+                    option.classList.add('active');
+                } else {
+                    option.classList.remove('active');
+                }
+            });
+            
+            // رندر مجدد محصولات
+            renderProducts();
+            
+            // بستن منوی فیلتر
+            closeFilterMenu();
+        }
+        
+        // تنظیم اعتبارسنجی فرم
+        function setupFormValidation() {
+            const form = document.getElementById('checkoutForm');
+            const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+            
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    validateField(this);
+                });
+            });
+        }
+        
+        function validateField(field) {
+            const errorElement = document.getElementById(field.id + 'Error');
+            
+            if (!field.value.trim()) {
+                errorElement.style.display = 'block';
+                field.style.borderColor = '#F44336';
+                return false;
+            } else {
+                errorElement.style.display = 'none';
+                field.style.borderColor = '#ddd';
+                return true;
+            }
+        }
+        
+        function validateForm() {
+            const form = document.getElementById('checkoutForm');
+            const inputs = form.querySelectorAll('input[required], textarea[required], select[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!validateField(input)) {
+                    isValid = false;
+                }
+            });
+            
+            return isValid;
+        }
+        
+        // تابع ارسال به تلگرام
+        async function sendToTelegram(orderData) {
+            const message = 
+`🛒 سفارش جدید از خوارکه فروشی گل زمان
+👤 نام: ${orderData.name}
+📞 تلفن: ${orderData.phone}
+📍 آدرس: ${orderData.address}
+📦 نحوه تحویل: ${orderData.delivery}
+💰 مبلغ: ${orderData.total} افغانی
+📋 سفارشات:
+${orderData.items}
+📍 موقعیت مکانی: ${orderData.location || 'ارسال نشده'}`;
+
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'Markdown'
+                    })
+                });
+
+                const result = await response.json();
+                console.log('پیام ارسال شد:', result);
+                return result;
+            } catch (error) {
+                console.error('خطا در ارسال:', error);
+                throw error;
+            }
+        }
+        
+        // مدیریت ارسال فرم
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            if (!validateForm()) {
+                showNotification('لطفاً تمام فیلدهای الزامی را پر کنید');
+                return;
+            }
+            
+            // اگر موقعیت دریافت نشده، از کاربر تایید بگیرید
+            if (!userLocation) {
+                const confirmSubmit = confirm("آیا مطمئن هستید که می‌خواهید بدون ارسال موقعیت مکانی، سفارش را ثبت کنید؟");
+                if (!confirmSubmit) {
+                    return;
+                }
+            }
+            
+            // جمع‌آوری داده‌های فرم
+            const orderData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                delivery: document.getElementById('delivery').value,
+                total: document.getElementById('orderTotal').value,
+                items: document.getElementById('orderDetails').value,
+                location: document.getElementById('locationData').value
+            };
+
+            // نمایش loading
+            document.getElementById('loading').style.display = 'block';
+            
+            try {
+                await sendToTelegram(orderData);
+                
+                // مخفی کردن فرم و نمایش پیام موفقیت
+                document.getElementById('orderForm').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('loading').style.display = 'none';
+                
+                // پاک کردن سبد خرید
+                cart = [];
+                updateCart();
+                
+            } catch (error) {
+                document.getElementById('loading').style.display = 'none';
+                showNotification('❌ خطا در ثبت سفارش. لطفاً با ما تماس بگیرید.');
+                console.error('Error:', error);
+            }
+        }
+    </script>
+</body>
+</html>
