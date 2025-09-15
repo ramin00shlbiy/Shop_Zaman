@@ -389,14 +389,14 @@ const allProducts = [
         id: 55,
         name: "شفالمونات",
         price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sh_limonade.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/Sh_Limonade.jpg",
         category: "drinks"
     },
     {
         id: 56,
         name: "پیپسی",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/pepsi-BOOTAL.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/Pepsi-BOOTAL.jpg",
         category: "drinks"
     },
     {
