@@ -4,7 +4,7 @@ const allProducts = [
         id: 1,
         name: "نوشابه کوکاکولا",
         price: 50,
-        image: "https://via.placeholder.com/300x200?text=نوشابه+کوکاکولا",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/milkool_caco.jpg",
         category: "drinks"
     },
     {
@@ -33,14 +33,14 @@ const allProducts = [
         id: 5,
         name: "نوشابه پپسی",
         price: 45,
-        image: "https://via.placeholder.com/300x200?text=نوشابه+پپسی",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/milkool_caco.jpg",
         category: "drinks"
     },
     {
         id: 6,
         name: "آب معدنی",
         price: 20,
-        image: "https://via.placeholder.com/300x200?text=آب+معدنی",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/milkool_caco.jpg",
         category: "drinks"
     },
     {
