@@ -39,7 +39,7 @@ const allProducts = [
         id: 6,
         name: "الکوزی / Alcokozay",
         price: 40,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/ALCOKZAY_Z.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/ALCOKOZAY_Z.jpg",
         category: "drinks"
     },
     {
@@ -67,14 +67,14 @@ const allProducts = [
         id: 10,
         name: "الکوزی / Cola",
         price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cola_Ai-light",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cola_Ai-light.jpg",
         category: "drinks"
     },
     {
         id: 11,
         name: "الکوزی / Cola",
         price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cola_Ai",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cola_Ai.jpg",
         category: "drinks"
     },
     {
@@ -102,7 +102,7 @@ const allProducts = [
         id: 15,
         name: "الکوزی / WOW ",
         price: 60,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/WOW_BOOTAL-BIG",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/WOW_BOOTAL-BIG.jpg",
         category: "drinks"
     },
     {
