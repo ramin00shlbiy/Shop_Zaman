@@ -4,7 +4,7 @@ const allProducts = [
         id: 1,
         name: "مانستر500 / MoNsTeR",
         price: 200,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M500.jpg?w=250&h=180",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M500.jpg",
         category: "drinks"
     },
     {
@@ -366,30 +366,30 @@ const allProducts = [
     },
     {
         id: 52,
-        name: "شفاآنار",
+        name: "شفا آنار",
         price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sh_BOOTAL-anarBIG.jpg",
         category: "drinks"
     },
     {
         id: 53,
-        name: "شفاآنار",
+        name: "شفا آنار",
         price: 20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sh_Ai-anar.jpg",
         category: "drinks"
     },
     {
         id: 54,
-        name: "شفالمونات",
+        name: "شفا لیمونات",
         price: 20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sh_limonade-Ai.jpg",
         category: "drinks"
     },
     {
         id: 55,
-        name: "شفالمونات",
+        name: "شفالیمونات",
         price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/Sh_Limonade.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/Sh_Limonoade.jpg",
         category: "drinks"
     },
     {
@@ -426,6 +426,174 @@ const allProducts = [
         name: "پارادایس لیمونات",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/paradise_lmonat.jpg",
+        category: "drinks"
+    },
+    {
+        id: 61,
+        name: "MinuteMaid / جوس سیب",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/minute_maid-big.jpg",
+        category: "drinks"
+    },
+    {
+        id: 62,
+        name: "MinuteMaid / جوس ام",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/minute_maid_big-mingo.jpg",
+        category: "drinks"
+    },
+    {
+        id: 63,
+        name: "MinuteMaid / جوس سیب",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/minutM.jpg",
+        category: "drinks"
+    },
+    {
+        id: 64,
+        name: "سنیچ هفت میوه",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_7min.jpg",
+        category: "drinks"
+    },
+    {
+        id: 65,
+        name: "سنیچ آناناس",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_anans.jpg",
+        category: "drinks"
+    },
+    {
+        id: 66,
+        name: "سنیچ آنار",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_anar.jpg",
+        category: "drinks"
+    },
+    {
+        id: 67,
+        name: "سنیچ سیب",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_apple.jpg",
+        category: "drinks"
+    },
+    {
+        id: 68,
+        name: "سنیچ الوبالو",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_cherry.jpg",
+        category: "drinks"
+    },
+    {
+        id: 69,
+        name: "سنیچ ام",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_mingo.jpg",
+        category: "drinks"
+    },
+    {
+        id: 70,
+        name: "سنیچ پرتقال",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_orenge.jpg",
+        category: "drinks"
+    },
+    {
+        id: 71,
+        name: "سنیچ آناناس / بوتل بزرگ",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_anans-booTAL.jpg",
+        category: "drinks"
+    },
+    {
+        id: 72,
+        name: "سنیچ آناناس / بوتل",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_anans-bootal.kochak.jpg",
+        category: "drinks"
+    },
+    {
+        id: 73,
+        name: "سنیچ سیب / بوتل بزرگ",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_apple-booTAL.jpg",
+        category: "drinks"
+    },
+    {
+        id: 74,
+        name: "سنیچ سیب / بوتل",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_apple-bootal.kochak.jpg",
+        category: "drinks"
+    },
+    {
+        id: 75,
+        name: "سنیچ آلوبالو / بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_cherry-big.jpg",
+        category: "drinks"
+    },
+    {
+        id: 76,
+        name: "سنیچ آلوبالو / بوتل",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_chrrey-bootal.jpg",
+        category: "drinks"
+    },
+    {
+        id: 77,
+        name: "سنیچ ام / بوتل بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_mingo-booTAL.jpg",
+        category: "drinks"
+    },
+    {
+        id: 78,
+        name: "سنیچ ام / بوتل",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_mingo-bootal.kochak.jpg",
+        category: "drinks"
+    },
+    {
+        id: 79,
+        name: "سنیچ شفتالو / بوتل",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cunich_O-bootal.jpg",
+        category: "drinks"
+    },
+    {
+        id: 80,
+        name: "سنیچ شفتالو بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_O-big",
+        category: "drinks"
+    },
+    {
+        id: 81,
+        name: "سنیچ پرتقال/ بوتل ",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_oringe-bootal.jpg",
+        category: "drinks"
+    },
+    {
+        id: 82,
+        name: "سنیچ ام / بوتل شیشی",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_shisha-mingo.jpg",
+        category: "drinks"
+    },
+    {
+        id: 83,
+        name: "سنیچ شفتالو /بوتل شیشی",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_shish-peach.O.jpg",
+        category: "drinks"
+    },
+    {
+        id: 84,
+        name: "سنیچ آلبالو /بوتل شیشی",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_shisha.jpg",
         category: "drinks"
         
     },
