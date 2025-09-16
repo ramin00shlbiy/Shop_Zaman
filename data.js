@@ -595,7 +595,55 @@ const allProducts = [
         price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_shisha.jpg",
         category: "drinks"
-        
+    },
+    {
+        id: 85,
+        name: "Commando / کماندو",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/commando_bootal.jpg",
+        category: "drinks"
+    },
+    {
+        id: 86,
+        name: "Commando / کماندو",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/commando_bootal.jpg",
+        category: "drinks"
+    },
+    {
+        id: 87,
+        name: "سنیچ سیب / بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_apple-big.jpg",
+        category: "drinks"
+    },
+    {
+        id: 88,
+        name: " سنیچ آناناس /بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_anas-big.jpg",
+        category: "drinks"
+    },
+    {
+        id: 89,
+        name: "سنیچ ام / بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_mingo-big.jpg",
+        category: "drinks"
+    },
+    {
+        id: 90,
+        name: "سنیچ آناناس هفت میوه / بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_7min2-big.jpg",
+        category: "drinks"
+    },
+    {
+        id: 91,
+        name: "سنیچ هفت میوه / بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_7min-big.jpg",
+        category: "drinks"
     },
     {
         id: 91,
