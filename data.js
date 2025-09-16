@@ -446,7 +446,7 @@ const allProducts = [
         id: 63,
         name: "MinuteMaid / جوس سیب",
         price: 10,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/minutM.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/minuteM.jpg",
         category: "drinks"
     },
     {
@@ -479,7 +479,7 @@ const allProducts = [
     },
     {
         id: 68,
-        name: "سنیچ الوبالو",
+        name: "سنیچ آلوبالو",
         price: 20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_cherry.jpg",
         category: "drinks"
@@ -558,14 +558,14 @@ const allProducts = [
         id: 79,
         name: "سنیچ شفتالو / بوتل",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cunich_O-bootal.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_O-bootal.jpg",
         category: "drinks"
     },
     {
         id: 80,
         name: "سنیچ شفتالو بزرگ",
         price: 100,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_O-big",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/sunich_O-big.jpg",
         category: "drinks"
     },
     {
