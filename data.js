@@ -647,7 +647,7 @@ const allProducts = [
     },
     {
         id: 91,
-        name: "چیپس سیب‌زمینی",
+        name: "کیک",
         price: 40,
         image: "https://via.placeholder.com/300x200?text=چیپس+سیب‌زمینی",
         category: "snacks"
@@ -661,7 +661,7 @@ const allProducts = [
     },
     {
         id: 3,
-        name: "شیرینی شکلاتی",
+        name: " مهرناز",
         price: 80,
         image: "https://via.placeholder.com/300x200?text=شیرینی+شکلاتی",
         category: "foods"
