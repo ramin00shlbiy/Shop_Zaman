@@ -212,7 +212,7 @@
         
         .product-info h3 {
             margin-bottom: 8px;
-            color: #333;
+            color: 333;
         }
         
         .product-info p {
@@ -696,6 +696,7 @@
             text-align: center;
             margin-top: 10px;
             font-weight: bold;
+            display: none;
         }
         
         /* پیام محدودیت زمانی */
@@ -775,7 +776,7 @@
                     <div id="locationStatus" class="location-status"></div>
                     <div id="mapPreview" class="map-preview"></div>
                     <a id="locationLink" class="location-link" target="_blank" style="display: none;">مشاهده موقعیت در نقشه</a>
-                    <span id="testLocation" class="test-location" style="display: none;">برای چک کردن روی لینک بالا کلیк کنید</span>
+                    <span id="testLocation" class="test-location" style="display: none;">برای چک کردن روی لینک بالا کلیک کنید</span>
                     
                     <!-- این فیلد برای ارسال لینک نقشه استفاده می‌شود -->
                     <input type="hidden" id="locationData" name="موقعیت مکانی">
@@ -801,10 +802,10 @@
         <div class="seo-section">
             <h2>خوراکه فروشی برادارن - بهترین کیفیت با قیمت ارزان</h2>
             <div class="seo-content">
-                <p>خوراکه فروشی برادارن با سال‌ها تجربه в زمینه ارائه مواد غذایی تازه و باکیفیت، همیشه تلاش کرده تا بهترین خدمات را به مشتریان خود ارائه دهد. ما در زمینه فروش انواع مواد غذایی، نوشیدنی‌ها، محصولات بهداشتی، کیک و کلچه تازه فعالیت داریم.</p>
+                <p>خوراکه فروشی برادارن با سال‌ها تجربه در زمینه ارائه مواد غذایی تازه و باکیفیت، همیشه تلاش کرده تا بهترین خدمات را به مشتریان خود ارائه دهد. мы در زمینه فروش انواع مواد غذایی، نوشیدنی‌ها، محصولات بهداشتی، کیک و کلچه تازه فعالیت داریم.</p>
                 
                 <h3>خدمات ما</h3>
-                <p>فروشگاه ما با ارائه طیف گسترده‌ای از محصولات غذایی и خوراکه، نیازهای روزانه شما را برطرف می‌کند. از جمله محصولات ما می‌توان به موارد زیر اشاره کرد:</p>
+                <p>فروشگاه ما با ارائه طیف گسترده‌ای از محصولات غذایی و خوراکه، نیازهای روزانه شما را برطرف می‌کند. از جمله محصولات ما می‌توان به موارد زیر اشاره کرد:</p>
                 <ul>
                     <li>انواع نوشیدنی‌های</li>
                     <li>مواد غذایی تازه و باکیفیت</li>
@@ -813,7 +814,7 @@
                     <li>خوراکه های متنوعی</li>
                 </ul>
                 
-                <h3>چرا خوراکه فروشی برادарن؟</h3>
+                <h3>چرا خوراکه فروشی برادارن؟</h3>
                 <p>ما با تکیه بر سال‌ها تجربه و بهره‌گیری از نیروهای متخصص، همواره کیفیت محصولات و رضایت مشتریان را در اولویت کار خود قرار داده‌ایم. تنوع محصولات، قیمت مناسب و ارزان خدمات سریع از ویژگی‌های ممتاز فروشگاه ما است.</p>
                 
                 <h3>برای ساخت ویب سایت و اطلاعات بیشتر ب مامراجعه کنید</h3>
@@ -866,10 +867,10 @@
         </div>
         <div class="cart-items" id="cartItems"></div>
         <div id="cartTotal" style="margin-top: 20px; font-weight: bold;"></div>
-        <div id="minOrderMessage" class="min-order-message" style="display: none;">
+        <div id="minOrderMessage" class="min-order-message">
             حداقل مبلغ خرید 50 افغانی است. برای ثبت سفارش باید مبلغ سبد خرید شما به 50 افغانی یا بیشتر برسد.
         </div>
-        <div id="timeLimitMessage" class="time-limit-message" style="display: none;">
+        <div id="timeLimitMessage" class="time-limit-message">
             بعد از ساعت 10 شب نمی‌توانید بیشتر از 500 افغانی خرید کنید. لطفاً فردا مراجعه کنید.
         </div>
         <button class="checkout-btn" id="checkoutButton" disabled>تکمیل سفارش</button>
@@ -1059,7 +1060,7 @@
                 }
             }
             
-            // بررسی آیا محصول از قبل در سبد وجود دارد
+            // بررسی آیا محصول از قبل в سبد وجود دارد
             const existingItemIndex = cart.findIndex(item => item.id === id);
             
             if (existingItemIndex !== -1) {
@@ -1072,7 +1073,7 @@
             
             updateCart();
             
-            // نمایش نوтиفیکیشن به جای alert
+            // نمایش نوتیفیکیشن به جای alert
             showNotification(`${name} به سبد خرید اضافه شد!`);
             
             // انیمیشن سبد خرید
@@ -1136,14 +1137,6 @@
             let total = 0;
             let count = 0;
             
-            // بررسی محدودیت زمانی
-            const after10PM = isAfter10PM();
-            if (after10PM) {
-                timeLimitMessage.style.display = 'block';
-            } else {
-                timeLimitMessage.style.display = 'none';
-            }
-            
             cart.forEach(item => {
                 total += item.price * item.quantity;
                 count += item.quantity;
@@ -1192,15 +1185,25 @@
             if (total < 50) {
                 checkoutButton.disabled = true;
                 minOrderMessage.style.display = 'block';
+                timeLimitMessage.style.display = 'none';
             } else {
                 checkoutButton.disabled = false;
                 minOrderMessage.style.display = 'none';
+                
+                // بررسی محدودیت زمانی (بعد از 10 شب)
+                if (isAfter10PM() && total > 500) {
+                    timeLimitMessage.style.display = 'block';
+                    checkoutButton.disabled = true;
+                } else {
+                    timeLimitMessage.style.display = 'none';
+                }
             }
             
             if (cart.length === 0) {
                 cartItems.innerHTML = '<p>سبد خرید شما خالی است</p>';
                 checkoutButton.disabled = true;
                 minOrderMessage.style.display = 'block';
+                timeLimitMessage.style.display = 'none';
             }
         }
         
@@ -1336,7 +1339,7 @@
                             errorMessage = "دسترسی به موقعیت مکانی لغو شد. لطفاً مجوز دسترسی را فعال کنید.";
                             break;
                         case error.POSITION_UNAVAILABLE:
-                            errorMessage = "اطلاعات موقعیت в دسترس نیست.";
+                            errorMessage = "اطلاعات موقعیت در دسترس نیست.";
                             break;
                         case error.TIMEOUT:
                             errorMessage = "دریافت موقعیت وقت گیر شد.";
