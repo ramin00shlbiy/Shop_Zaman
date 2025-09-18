@@ -712,7 +712,7 @@
     <div class="container">
         <header class="shop-header">
             <h1>خوراکه فروشی برادارن</h1>
-            <p> خوراکه فروشی برادارن با بهترین کیفیت - ما 24ساعتActiveهستیم</p>
+            <p> خوراکه فروشی برادارن با بهترین качеیت - ما 24ساعتActiveهستیم</p>
         </header>
 
         <div class="search-container">
@@ -775,7 +775,7 @@
                     <div id="locationStatus" class="location-status"></div>
                     <div id="mapPreview" class="map-preview"></div>
                     <a id="locationLink" class="location-link" target="_blank" style="display: none;">مشاهده موقعیت در نقشه</a>
-                    <span id="testLocation" class="test-location" style="display: none;">برای چک کردن روی لینک بالا کلیк کنید</span>
+                    <span id="testLocation" class="test-location" style="display: none;">برای چک کردن روی لینک بالا کلیک کنید</span>
                     
                     <!-- این فیلد برای ارسال لینک نقشه استفاده می‌شود -->
                     <input type="hidden" id="locationData" name="موقعیت مکانی">
@@ -797,14 +797,14 @@
             <p>به زودی با شما تماس خواهیم گرفت.</p>
         </div>
 
-        <!-- بخش سئو و اطلاعات کسب و کار -->
+        <!-- بخش سئو و информации کسب و کار -->
         <div class="seo-section">
             <h2>خوراکه فروشی برادارن - بهترین کیفیت با قیمت ارزان</h2>
             <div class="seo-content">
-                <p>خوراکه فروشی برادارن با سال‌ها تجربه в زمینه ارائه مواد غذایی تازه و باکیفیت، همیشه تلاش کرده تا بهترین خدمات را به مشتریان خود ارائه دهد. ما در زمینه فروش انواع مواد غذایی، نوشیدنی‌ها، محصولات بهداشتی، کیک و کلچه تازه فعالیت داریم.</p>
+                <p>خوراکه فروشی برادارن با سال‌ها تجربه در زمینه ارائه مواد غذایی تازه و باکیفیت، همیشه تلاش کرده تا بهترین خدمات را به مشتریان خود ارائه دهد. ما در زمینه فروش انواع مواد غذایی، نوشیدنی‌ها، محصولات بهداشتی، کیک و کلچه تازه فعالیت داریم.</p>
                 
                 <h3>خدمات ما</h3>
-                <p>فروشگاه ما با ارائه طیف گسترده‌ای از محصولات غذایی и خوراکه، نیازهای روزانه شما را برطرف می‌کند. از جمله محصولات ما می‌توان به موارد زیر اشاره کرد:</p>
+                <p>فروشگاه ما با ارائه طیف گسترده‌ای از محصولات غذایی و خوراکه، نیازهای روزانه شما را برطرف می‌کند. از جمله محصولات ما می‌توان به موارد زیر اشاره کرد:</p>
                 <ul>
                     <li>انواع نوشیدنی‌های</li>
                     <li>مواد غذایی تازه و باکیفیت</li>
@@ -813,7 +813,7 @@
                     <li>خوراکه های متنوعی</li>
                 </ul>
                 
-                <h3>چرا خوراکه فروشی برادарن؟</h3>
+                <h3>چرا خوراکه فروشی برادارن؟</h3>
                 <p>ما با تکیه بر سال‌ها تجربه و بهره‌گیری از نیروهای متخصص، همواره کیفیت محصولات و رضایت مشتریان را در اولویت کار خود قرار داده‌ایم. تنوع محصولات، قیمت مناسب و ارزان خدمات سریع از ویژگی‌های ممتاز فروشگاه ما است.</p>
                 
                 <h3>برای ساخت ویب سایت و اطلاعات بیشتر ب مامراجعه کنید</h3>
@@ -850,7 +850,7 @@
         <div class="filter-category">
             <h3>دسته‌بندی محصولات</h3>
             <div class="filter-option active" data-category="all">همه محصولات</div>
-            <div class="filter-option" data-category="drinks">نوشیدنی‌ها</div>
+            <div class="filter-option" data-category="drinks">ن نوشیدنی‌ها</div>
             <div class="filter-option" data-category="foods">خوراکی‌ها</div>
             <div class="filter-option" data-category="hygiene">بهداشتی</div>
             <div class="filter-option" data-category="snacks">کیک و کلچه</div>
@@ -973,10 +973,11 @@
             return afghanistanTime;
         }
         
-        // تابع برای بررسی محدودیت زمانی (بعد از ساعت 10 شب)
-        function isAfter10PM() {
+        // تابع برای بررسی محدودیت زمانی (بعد از ساعت 10 شب تا 8 صبح)
+        function isDuringNightLimit() {
             const afgTime = getAfghanistanTime();
-            return afgTime.getHours() >= 22; // 10 PM = 22
+            const currentHour = afgTime.getHours();
+            return currentHour >= 22 || currentHour < 8; // 10 PM to 8 AM
         }
         
         // تابع برای محاسبه مجموع سبد خرید
@@ -1050,8 +1051,8 @@
         }
         
         function addToCart(name, price, id) {
-            // بررسی محدودیت زمانی (بعد از 10 شب)
-            if (isAfter10PM()) {
+            // بررسی محدودیت زمانی (بعد از 10 شب تا 8 صبح)
+            if (isDuringNightLimit()) {
                 const currentTotal = calculateCartTotal();
                 if (currentTotal + price > 500) {
                     showNotification("بعد از ساعت 10 شب نمی‌توانید بیشتر از 500 افغانی خرید کنید. لطفاً فردا مراجعه کنید.");
@@ -1072,7 +1073,7 @@
             
             updateCart();
             
-            // نمایش نوтиفیکیشن به جای alert
+            // نمایش نوتیفیکیشن به جای alert
             showNotification(`${name} به سبد خرید اضافه شد!`);
             
             // انیمیشن سبد خرید
@@ -1089,8 +1090,8 @@
         function increaseQuantity(id) {
             const itemIndex = cart.findIndex(item => item.id === id);
             if (itemIndex !== -1) {
-                // بررسی محدودیت زمانی (بعد از 10 شب)
-                if (isAfter10PM()) {
+                // بررسی محدودیت زمانی (بعد از 10 شب تا 8 صبح)
+                if (isDuringNightLimit()) {
                     const currentTotal = calculateCartTotal();
                     if (currentTotal + cart[itemIndex].price > 500) {
                         showNotification("بعد از ساعت 10 شب نمی‌توانید بیشتر از 500 افغانی خرید کنید. لطفاً فردا مراجعه کنید.");
@@ -1137,12 +1138,7 @@
             let count = 0;
             
             // بررسی محدودیت زمانی
-            const after10PM = isAfter10PM();
-            if (after10PM) {
-                timeLimitMessage.style.display = 'block';
-            } else {
-                timeLimitMessage.style.display = 'none';
-            }
+            const duringNightLimit = isDuringNightLimit();
             
             cart.forEach(item => {
                 total += item.price * item.quantity;
@@ -1197,10 +1193,19 @@
                 minOrderMessage.style.display = 'none';
             }
             
+            // بررسی محدودیت زمانی (فقط در صورت بودن در بازه زمانی و مجموع بیشتر از 500)
+            if (duringNightLimit && total > 500) {
+                checkoutButton.disabled = true;
+                timeLimitMessage.style.display = 'block';
+            } else {
+                timeLimitMessage.style.display = 'none';
+            }
+            
             if (cart.length === 0) {
                 cartItems.innerHTML = '<p>سبد خرید شما خالی است</p>';
                 checkoutButton.disabled = true;
                 minOrderMessage.style.display = 'block';
+                timeLimitMessage.style.display = 'none';
             }
         }
         
@@ -1227,8 +1232,8 @@
                 return;
             }
             
-            // بررسی محدودیت زمانی (بعد از 10 شب)
-            if (isAfter10PM()) {
+            // بررسی محدودیت زمانی (بعد از 10 شب تا 8 صبح)
+            if (isDuringNightLimit()) {
                 if (total > 500) {
                     showNotification("بعد از ساعت 10 شب نمی‌توانید بیشتر از 500 افغانی خرید کنید. لطفاً فردا مراجعه کنید.");
                     return;
@@ -1336,7 +1341,7 @@
                             errorMessage = "دسترسی به موقعیت مکانی لغو شد. لطفاً مجوز دسترسی را فعال کنید.";
                             break;
                         case error.POSITION_UNAVAILABLE:
-                            errorMessage = "اطلاعات موقعیت в دسترس نیست.";
+                            errorMessage = "اطلاعات موقعیت در دسترس نیست.";
                             break;
                         case error.TIMEOUT:
                             errorMessage = "دریافت موقعیت وقت گیر شد.";
@@ -1402,7 +1407,7 @@
             // رندر مجدد محصولات
             renderProducts();
             
-            // بستن منوی فیلتر
+            // بستن منوی فилتر
             closeFilterMenu();
         }
         
@@ -1495,8 +1500,8 @@ ${orderData.items}
                 return;
             }
             
-            // بررسی محدودیت زمانی (بعد از 10 شب)
-            if (isAfter10PM()) {
+            // بررسی محدودیت زمانی (بعد از 10 شب تا 8 صبح)
+            if (isDuringNightLimit()) {
                 if (total > 500) {
                     showNotification("بعد از ساعت 10 شب نمی‌توانید بیشتر از 500 افغانی خرید کنید. لطفاً فردا مراجعه کنید.");
                     return;
