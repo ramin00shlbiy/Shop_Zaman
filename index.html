@@ -774,7 +774,7 @@
                     </button>
                     <div id="locationStatus" class="location-status"></div>
                     <div id="mapPreview" class="map-preview"></div>
-                    <a id="locationLink" class="location-link" target="_blank" style="display: none;">مشاهده موقعیت در نقشه</a>
+                    <a id="locationLink" class="location-link" target="_blank" style="display: none;">مشاهده موقعیت درMAP نقشه</a>
                     <span id="testLocation" class="test-location" style="display: none;">برای چک کردن روی لینک بالا کلیک کنید</span>
                     
                     <!-- این فیلد برای ارسال لینک نقشه استفاده می‌شود -->
@@ -977,7 +977,7 @@
         function isDuringNightLimit() {
             const afgTime = getAfghanistanTime();
             const currentHour = afgTime.getHours();
-            return currentHour >= 22 || currentHour < 8; // 10 PM to 8 AM
+            return currentHour >= 22 || currentHour < 10:27; // 10 PM to 8 AM
         }
         
         // تابع برای محاسبه مجموع سبد خرید
