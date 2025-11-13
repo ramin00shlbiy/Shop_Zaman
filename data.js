@@ -6,6 +6,7 @@ const allProducts = [
         price: 150,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M500.jpg",
         category: "drinks"
+        available: true
     },
     {
         id: 2,
