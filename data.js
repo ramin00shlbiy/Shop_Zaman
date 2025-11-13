@@ -772,7 +772,7 @@ const allProducts = [
         id: 2,
         name: "مربا زردک/شانا",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2021.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/2021.jpg",
         category: "foods",
         available: true
     },
@@ -780,7 +780,7 @@ const allProducts = [
         id: 3,
         name: "مربا زردک بزرگ/شانا",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2021_1.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/2021_1.jpg",
         category: "foods",
         available: true
     },
@@ -788,7 +788,7 @@ const allProducts = [
         id: 4,
         name: "مربا آلبالو/شانا",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2221_1.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/2221_1.jpg",
         category: "foods",
         available: true
     },
@@ -796,7 +796,7 @@ const allProducts = [
         id: 5,
         name: " مربا آلبالو بزرگ/شانا",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2221_1.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/2221_1.jpg",
         category: "foods",
         available: true
     },
@@ -804,7 +804,7 @@ const allProducts = [
         id: 6,
         name: "خرما",
         price: 100,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2222.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/2222.jpg",
         category: "foods",
         available: true
     },
@@ -812,7 +812,7 @@ const allProducts = [
         id: 7,
         name: "نخو/کیلوگرم",
         price: 110,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2223.png",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/2223.png",
         category: "foods",
         available: true 
     },
@@ -820,7 +820,7 @@ const allProducts = [
         id: 8,
         name: "کیک باباجون",
         price: 10,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/babajoon.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Babajoon.jpg",
         category: "foods",
         available: true
     },
@@ -828,7 +828,7 @@ const allProducts = [
         id: 9,
         name: "بسکیت/Bakeri",
         price: 25,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/bakeri.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Bakeri.jpg",
         category: "foods",
         available: true
     },
@@ -836,7 +836,7 @@ const allProducts = [
         id: 10,
         name: "",
         price: 5,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/chicken bouillon.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Chicken bouillon.jpg",
         category: "foods",
         available: true
     },
