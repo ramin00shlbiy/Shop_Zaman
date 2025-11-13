@@ -844,7 +844,7 @@ const allProducts = [
         id: 11,
         name: "بسکیت choclatechip",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/choclatechip.webp",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/choclatechip.webp",
         category: "foods",
         available: true
         
