@@ -5,7 +5,7 @@ const allProducts = [
         name: "MLمانستر500 / MoNsTeR",
         price: 150,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M500.jpg",
-        category: "drinks"
+        category: "drinks",
         available: true
     },
     {
