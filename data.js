@@ -761,10 +761,90 @@ const allProducts = [
         available: true
     },
     {
-        id: 3,
+        id: 1,
         name: " مهرناز",
         price: 10,
         image: "https://via.placeholder.com/300x200?text=شیرینی+شکلاتی",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 2,
+        name: "مربا زردک/شانا",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2021.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 3,
+        name: "مربا زردک بزرگ/شانا",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2021_1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 4,
+        name: "مربا آلبالو/شانا",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2221_1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 5,
+        name: " مربا آلبالو بزرگ/شانا",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2221_1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 6,
+        name: "خرما",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2222.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 7,
+        name: "نخو/کیلوگرم",
+        price: 110,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2223.jpg",
+        category: "foods",
+        available: true 
+    },
+    {
+        id: 8,
+        name: "کیک باباجون",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/babajoon.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 9,
+        name: "بسکیت/Bakeri",
+        price: 25,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/bakeri.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 10,
+        name: "",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/chicken bouillon.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 11,
+        name: "بسکیت choclatechip",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/choclatechip.webp",
         category: "foods",
         available: true
         
