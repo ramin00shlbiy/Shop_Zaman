@@ -2,15 +2,15 @@
 const allProducts = [
     {
         id: 1,
-        name: "مانستر500 / MoNsTeR",
-        price: 200,
+        name: "MLمانستر500 / MoNsTeR",
+        price: 150,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M500.jpg",
         category: "drinks"
     },
     {
         id: 2,
-        name: "مانستر250 / MoNsTeR",
-        price: 100,
+        name: "MLمانستر250 / MoNsTeR",
+        price: 80,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M250.jpg",
         category: "drinks"
     },
@@ -108,7 +108,7 @@ const allProducts = [
     {
         id: 16,
         name: "آب جو / 3HORSES",
-        price: 40,
+        price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/3Horses.jpg",
         category: "drinks"
     },
@@ -360,7 +360,7 @@ const allProducts = [
     {
         id: 51,
         name: "RedBull",
-        price: 90,
+        price: 150,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/red_bull.jpg",
         category: "drinks"
     },
@@ -388,7 +388,7 @@ const allProducts = [
     {
         id: 55,
         name: "شفالیمونات",
-        price: 20,
+        price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/Sh_Limonoade.jpg",
         category: "drinks"
     },
