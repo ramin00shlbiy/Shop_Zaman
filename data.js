@@ -812,7 +812,7 @@ const allProducts = [
         id: 7,
         name: "نخو/کیلوگرم",
         price: 110,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2223.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/foods/2223.png",
         category: "foods",
         available: true 
     },
