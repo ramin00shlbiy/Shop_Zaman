@@ -950,7 +950,7 @@ const allProducts = [
         name: "پنپر /lulla baby 4",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Lulla baby 4.jpg",
-        category: "foods",
+        category: "hygiene",
         available: true
     },
     {
@@ -958,7 +958,7 @@ const allProducts = [
         name: " پنپر /lulla baby 3",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Lullababe 3.jpg",
-        category: "foods",
+        category: "hygiene",
         available: true
     },
     {
@@ -1006,7 +1006,7 @@ const allProducts = [
         name: "goodDay / شیر",
         price:20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Milk goodau.jpeg",
-        category: "foods",
+        category: "drinks",
         available: true
 
     },
@@ -1047,7 +1047,7 @@ const allProducts = [
         name: "آب نوشک ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Noshaq water.jpg",
-        category: "foods",
+        category: "drinks",
         available: true
     },
     {
@@ -1108,7 +1108,7 @@ const allProducts = [
     },
     {
         id: 44,
-        name: "",
+        name: "بسکیت Tuk",
         price:25,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Tuk.jpg",
         category: "foods",
