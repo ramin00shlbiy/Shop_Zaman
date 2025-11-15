@@ -892,7 +892,7 @@ const allProducts = [
         id: 17,
         name: "قیماق عسلی",
         price: 40,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Honau cream.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Honeu cream.jpg",
         category: "foods",
         available: true 
     },
@@ -957,7 +957,7 @@ const allProducts = [
         id: 25,
         name: " پنپر /lulla baby 3",
         price: 10,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Lullababy 3.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Lullababe 3.jpg",
         category: "foods",
         available: true
     },
