@@ -86,7 +86,7 @@ const allProducts = [
         price: 20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cola_Ai.jpg",
         category: "drinks",
-        available: false
+        available: true
     },
     {
         id: 12,
@@ -94,7 +94,7 @@ const allProducts = [
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/cola_bootal.jpg",
         category: "drinks",
-        available: true
+        available: false
     },
     {
         id: 13,
