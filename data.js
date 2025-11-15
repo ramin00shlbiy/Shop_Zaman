@@ -326,7 +326,7 @@ const allProducts = [
         price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/carabao.jpg",
         category: "drinks",
-        availaavail: true 
+        available: true 
     },
     {
         id: 41,
