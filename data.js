@@ -876,7 +876,7 @@ const allProducts = [
         id: 15,
         name: "رب هدیه / بزرگ",
         price: 100,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Hadua.png",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Hedua.png",
         category: "foods",
         available: true
     },
@@ -892,7 +892,7 @@ const allProducts = [
         id: 17,
         name: "قیماق عسلی",
         price: 40,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Honau Cream.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Honau cream.jpg",
         category: "foods",
         available: true 
     },
@@ -957,7 +957,7 @@ const allProducts = [
         id: 25,
         name: " پنپر /lulla baby 3",
         price: 10,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Lulla baby 3.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Lullababy 3.jpg",
         category: "foods",
         available: true
     },
