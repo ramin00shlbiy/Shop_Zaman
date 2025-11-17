@@ -1121,6 +1121,496 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/lays french cheese.jpg",
         category: "foods",
         available: true
-        
+
+        aMSH:
+},
+    {
+        id: 1,
+        name: "سفید کننده بزرگ",
+        price: 160,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/2234.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 2,
+        name: "طعم قلیان",
+        price: 80,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/4455.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 3,
+        name: "زغال قلیان",
+        price: 5/ 1,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/5536.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 4,
+        name: "گلرنگ",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/8778.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 5,
+        name: "ترقه",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Artapoper.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 6,
+        name: "سگرت ESSE / Black",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Esse.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 7,
+        name: "سگرت ESSE / change",
+        price:60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Esse change.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 8,
+        name: "سکرت ESSE / CHANGE",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Essechange1.jpg",
+        category: "tanbacco",
+        available: true
+},
+    {
+         id: 9,
+        name: "سفید کننده / گلرنگ بزرگ",
+        price: 160,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Fbf6.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 10,
+        name: "filo / قلیان",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Foil.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 11,
+        name: "گو گرد ",
+        price:10 ,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Gogo.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 12,
+        name: "شیشه/ پاکن",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Golrang.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 13,
+        name: هدیه ،/کوچک"",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Hadea1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 14,
+        name: " مایع ظرف شویی /گلرنگ ",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Lemon.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 15,
+        name: "لیتر ",
+        price:10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/ Lighter.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 16,
+        name: " سکرت میلانو/سیاه ",
+        price: 40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Milano.webp",
+        category: "tanbacco",
+        available: true
+       },
+    {
+        id: 17,
+        name: "  سکرت میلان و /سرخ",
+
+price: 25,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Milano 2.webp",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 18,
+        name: "سکرت میلان و /سفید ",
+        price: 40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Milano1.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 19,
+        name: "میلان و کتلاک/سیاه ",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Milano5.webp",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 20,
+        name: "میلان وکتلاک/سفید",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Milanog.png",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 21,
+        name: "مدرن سفید",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Mobern 1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 22,
+        name: " مدرن /فولادی ",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Modern.webp",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 23,
+        name: "   مدرن /جیگری",
+        price:20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Modern.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 24,
+        name: "  ماند /سفید",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Mond1.png",
+        category: "tanbacco",
+        available: true
+},
+    {
+         id: 25,
+        name: " پودر وهاب /بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Oab.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 26,
+        name: " پودر وهاب /کوچک",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Oab1.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 27,
+        name: "آب بزرگ/ الکوزی ",
+        price:70 ,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Oatar 2.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 28,
+        name: "کاغذ/صدف",
+        price: 70,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Oooo.png",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 29,
+        name:  ،"آب الکوزی/ بزرگ",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Otar.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 30,
+        name: " آب الکوزی /کوچک ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Otar 1.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 31,
+        name: " سکرت/پن",
+        price:40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/ Pn.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 32,
+        name: "سکرت جاپانی ",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Son.jpg",
+        category: "tanbacco",
+        available: true
+       },
+    {
+        id: 33,
+        name: " زیست/ نازک ",
+        price: 40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Zezt.jpg",
+
+category: "foods",
+        available: false
+    },
+    {
+        id: 34,
+        name: "بریانی ",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/3325.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 35,
+        name: " تن ماهی/مرکه",
+        price: 80,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/3344.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 36,
+        name: "خاش چپس",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/5544.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 37,
+        name: "ککو/ایدین",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Aidenr.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 38,
+        name: "  ککو دری ملک",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Dere milk.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 39,
+        name: "  بسکیت دیلایت",
+        price:10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Dilait.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 40,
+        name: " ساجق فری گلس",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Fre.jpg",
+        category: "tanbacco",
+        available: true
+},
+    {
+         id: 41,
+        name: "ساجق/فری گلس ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Fras.png",
+        category: "foods",
+        available: false
+    },
+    {
+        id:42 ,
+        name: " خندان/بزرگ ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Gggg.png",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 43,
+        name: "خندان کوچک ",
+        price:5 ,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Gogo.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 44,
+        name: "جلبی تیموریان/ فی کیلو",
+        price: 120,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Glabe.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 45,
+        name:  ،" کیک ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Hanipers.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 46,
+        name: " کیک",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Hanipers1.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 47,
+        name: "کاکو ایدین ",
+        price:5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Iden.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 48,
+        name: " سابق کیس ",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Kiss-gum.jpg",
+        category: "tanbacco",
+        available: true
+
+        id:49 ,
+        name: " مانا/چپس",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Mana.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 50,
+        name: " مانا چپس/تعم پیاز",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Mana1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 51,
+        name: "مانا چپس/ تعم تند",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/ Mana2.png",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 52,
+        name: "  مانا چپیس/ تعم تند",
+        price:10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Mana.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 53,
+        name: " ساجق تعم/ توت زمینی ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Smai.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+         id: 54,
+        name: " ساجق طعم برگ ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Smail.png",
+        category: "foods",
+        available: false
+    },
+    {
+        id:55 ,
+        name: "یاحق طعم نعنا ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Smail1.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 56,
+        name: " ساجق طعم تربوز ",
+        price:10 ,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Smaile.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 57,
+        name: " بسکیت ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Sop.png",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 58,
+        name:  ،" بسکیت ",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Soper.png",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 59,
+        name: " کاکو",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Spark.Webp",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 60,
+        name: "  تن ماهی /چابهاربزرگ",
+        price:60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Tan.jpg",
+        category: "tonbacco",
+        available: true
+    },
+    {
+        id: 61,
+        name: "5xککو",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tonbacco/x5.jpg",
+        category: "foods",
+        available: true
     }
 ];
