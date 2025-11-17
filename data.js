@@ -1146,5 +1146,61 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/5536.jpg",
         category: "tobacco",
         available: true
+            },
+    {
+        id: 4,
+        name: "گلرنگ",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/8778.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 5,
+        name: "ترقه",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Artapoper.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 6,
+        name: "سگرت ESSE / Black",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Esse.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 7,
+        name: "سگرت ESSE / change",
+        price:60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Esse change.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 8,
+        name: "سکرت ESSE / CHANGE",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Essechange1.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+         id: 9,
+        name: "سفید کننده / گلرنگ بزرگ",
+        price: 160,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Fbf6.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 10,
+        name: "filo / قلیان",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Foil.jpg",
+        category: "tobacco",
+        available: true
     }
 ];
