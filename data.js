@@ -1202,5 +1202,69 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Foil.jpg",
         category: "tobacco",
         available: true
+            },
+    {
+        id: 11,
+        name: "گو گرد ",
+        price:10 ,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Gogo.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 12,
+        name: "شیشه/ پاکن",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Golrang.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 13,
+        name: "هدیه ،/کوچک",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Hadea1.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 14,
+        name: " مایع ظرف شویی /گلرنگ ",
+        price: 60,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Lemon.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 15,
+        name: "لیتر ",
+        price:10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/ Lighter.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 16,
+        name: " سکرت میلانو/سیاه ",
+        price: 40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano.webp",
+        category: "tobacco",
+        available: true
+       },
+    {
+        id: 17,
+        name: "  سکرت میلان و /سرخ",
+        price: 25,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano 2.webp",
+        category: "tobacco",
+        available: false
+    },
+    {
+        id: 18,
+        name: "سکرت میلان و /سفید ",
+        price: 40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano1.jpg",
+        category: "tobacco",
+        available: true
     }
 ];
