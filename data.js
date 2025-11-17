@@ -1146,7 +1146,7 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/5536.jpg",
         category: "tobacco",
         available: true
-            },
+    },
     {
         id: 4,
         name: "گلرنگ",
@@ -1202,7 +1202,7 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Foil.jpg",
         category: "tobacco",
         available: true
-            },
+    },
     {
         id: 11,
         name: "گو گرد ",
@@ -1250,7 +1250,7 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano.webp",
         category: "tobacco",
         available: true
-       },
+    },
     {
         id: 17,
         name: "  سکرت میلان و /سرخ",
@@ -1266,7 +1266,7 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano1.jpg",
         category: "tobacco",
         available: true
-        },
+    },
     {
         id: 19,
         name: "میلان و کتلاک/سیاه ",
@@ -1314,12 +1314,77 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Mond1.png",
         category: "tobacco",
         available: true
-},
+    },
     {
          id: 25,
         name: " پودر وهاب /بزرگ",
         price: 100,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oab.jpg",
+        category: "tobacco",
+        available: false
+    },
+    {
+        id: 26,
+        name: " پودر وهاب /کوچک",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oab1.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 27,
+        name: "آب بزرگ/ الکوزی ",
+        price:70 ,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oatar 2.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 28,
+        name: "کاغذ/صدف",
+        price: 70,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oooo.png",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 29,
+        name:  "آب الکوزی/ بزرگ",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Otar.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 30,
+        name: " آب الکوزی /کوچک ",
+        price: 10,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Otar 1.jpg",
+        category: "tanbacco",
+        available: true
+    },
+    {
+        id: 31,
+        name: " سکرت/پن",
+        price:40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/ Pn.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 32,
+        name: "سکرت جاپانی ",
+        price: 50,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Son.jpg",
+        category: "tobacco",
+        available: true
+       },
+    {
+        id: 33,
+        name: " زیست/ نازک ",
+        price: 40,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Zezt.jpg",
+
         category: "tobacco",
         available: false
     }
