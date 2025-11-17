@@ -1121,7 +1121,46 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/lays french cheese.jpg",
         category: "foods",
         available: true
-
+    },
+    {
+        id: 46,
+        name: "بریانی ",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/3325.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 47,
+        name: " تن ماهی/مرکه",
+        price: 80,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/3344.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 48,
+        name: "خاش چپس",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/5544.jpg",
+        category: "foods",
+        available: false
+    },
+    {
+        id: 49,
+        name: "ککو/ایدین",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Aidenr.jpg",
+        category: "foods",
+        available: true
+    },
+    {
+        id: 50,
+        name: "  ککو دری ملک",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Dere milk.jpg",
+        category: "foods",
+        available: true
      },
     {
         id: 100,
@@ -1387,5 +1426,6 @@ const allProducts = [
 
         category: "tobacco",
         available: false
+        
     }
 ];
