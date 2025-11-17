@@ -1509,6 +1509,8 @@ category: "foods",
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tanbacco/Kiss-gum.jpg",
         category: "tanbacco",
         available: true
+   },
+    {
 
         id:49 ,
         name: " مانا/چپس",
