@@ -112,7 +112,7 @@
             background: white;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
             transition: left 0.3s ease;
-            z-index: 1001;
+            z-index: 1003; /* افزایش z-index */
             padding: 20px;
             overflow-y: auto;
             display: flex;
@@ -181,7 +181,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
+            z-index: 1002; /* افزایش z-index */
         }
         
         .filter-overlay.open {
@@ -377,11 +377,15 @@
             background: white;
             box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.3s ease;
-            z-index: 1001;
+            z-index: 1003; /* افزایش z-index */
             padding: 20px;
             overflow-y: auto;
             display: flex;
             flex-direction: column;
+        }
+        
+        .cart-sidebar.open {
+            right: 0;
         }
         
         .cart-header {
@@ -407,10 +411,6 @@
             font-size: 14px;
         }
         
-        .cart-sidebar.open {
-            right: 0;
-        }
-        
         .cart-overlay {
             display: none;
             position: fixed;
@@ -419,7 +419,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
+            z-index: 1002; /* افزایش z-index */
         }
         
         .cart-overlay.open {
