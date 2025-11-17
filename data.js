@@ -1121,5 +1121,14 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/lays french cheese.jpg",
         category: "foods",
         available: true
+
+     },
+    {
+        id: 100,
+        name: "سفید کننده بزرگ",
+        price: 160,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/2234.jpg",
+        category: "hygiene",
+        available: false
     }
 ];
