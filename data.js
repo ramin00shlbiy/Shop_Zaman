@@ -1123,7 +1123,7 @@ const allProducts = [
         available: true
    },
     {
-        id: 1,
+        id: 100,
         name: "سفید کننده بزرگ",
         price: 160,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/2234.jpg",
@@ -1131,7 +1131,7 @@ const allProducts = [
         available: false
     },
     {
-        id: 2,
+        id: 101,
         name: "طعم قلیان",
         price: 80,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/4455.jpg",
@@ -1139,9 +1139,9 @@ const allProducts = [
         available: true
     },
     {
-        id: 3,
+        id: 2,
         name: "زغال قلیان",
-        price: 5/ 1,
+        price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/5536.jpg",
         category: "tobacco",
         available: true
@@ -1384,11 +1384,11 @@ const allProducts = [
         price: 40,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Zezt.jpg",
 
-category: "tobacco",
+        category: "tobacco",
         available: false
     },
     {
-        id: 34,
+        id: 46,
         name: "بریانی ",
         price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/3325.jpg",
@@ -1396,7 +1396,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 35,
+        id: 47,
         name: " تن ماهی/مرکه",
         price: 80,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/3344.jpg",
@@ -1404,7 +1404,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 36,
+        id: 48,
         name: "خاش چپس",
         price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/5544.jpg",
@@ -1412,7 +1412,7 @@ category: "tobacco",
         available: false
     },
     {
-        id: 37,
+        id: 49,
         name: "ککو/ایدین",
         price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Aidenr.jpg",
@@ -1420,7 +1420,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 38,
+        id: 50,
         name: "  ککو دری ملک",
         price: 20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Dere milk.jpg",
@@ -1428,7 +1428,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 39,
+        id: 51,
         name: "  بسکیت دیلایت",
         price:10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Dilait.jpg",
@@ -1436,7 +1436,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 40,
+        id: 52,
         name: " ساجق فری گلس",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Fre.jpg",
@@ -1444,7 +1444,7 @@ category: "tobacco",
         available: true
 },
     {
-         id: 41,
+         id: 53,
         name: "ساجق/فری گلس ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Fras.png",
@@ -1452,7 +1452,7 @@ category: "tobacco",
         available: false
     },
     {
-        id:42 ,
+        id: 54,
         name: " خندان/بزرگ ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Gggg.png",
@@ -1460,7 +1460,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 43,
+        id: 55,
         name: "خندان کوچک ",
         price:5 ,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Gogo.jpg",
@@ -1468,7 +1468,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 44,
+        id: 56,
         name: "جلبی تیموریان/ فی کیلو",
         price: 120,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Glabe.jpg",
@@ -1476,7 +1476,7 @@ category: "tobacco",
         available: false
     },
     {
-        id: 45,
+        id: 57,
         name:  " کیک ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Hanipers.jpg",
@@ -1484,7 +1484,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 46,
+        id: 58,
         name: " کیک",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Hanipers1.jpg",
@@ -1492,7 +1492,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 47,
+        id: 59,
         name: "ککو ایدین ",
         price:5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Iden.jpg",
@@ -1500,7 +1500,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 48,
+        id: 60,
         name: " سابق کیس ",
         price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Kiss-gum.jpg",
@@ -1509,7 +1509,7 @@ category: "tobacco",
    },
     {
 
-        id:49 ,
+        id: 61,
         name: " مانا/چپس",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Mana.jpg",
@@ -1517,7 +1517,7 @@ category: "tobacco",
         available: false
     },
     {
-        id: 50,
+        id: 62,
         name: " مانا چپس/تعم پیاز",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Mana1.jpg",
@@ -1525,7 +1525,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 51,
+        id: 63,
         name: "مانا چپس/ تعم تند",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/ Mana2.png",
@@ -1533,7 +1533,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 52,
+        id: 63,
         name: "  مانا چپیس/ تعم تند",
         price:10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Mana.jpg",
@@ -1541,7 +1541,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 53,
+        id: 64,
         name: " ساجق تعم/ توت زمینی ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Smai.jpg",
@@ -1549,7 +1549,7 @@ category: "tobacco",
         available: true
     },
     {
-         id: 54,
+         id: 65,
         name: " ساجق طعم برگ ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Smail.png",
@@ -1557,7 +1557,7 @@ category: "tobacco",
         available: false
     },
     {
-        id:55 ,
+        id: 66,
         name: "یاحق طعم نعنا ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Smail1.jpg",
@@ -1565,7 +1565,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 56,
+        id: 67,
         name: " ساجق طعم تربوز ",
         price:10 ,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Smaile.jpg",
@@ -1573,7 +1573,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 57,
+        id: 68,
         name: " بسکیت ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Sop.png",
@@ -1581,7 +1581,7 @@ category: "tobacco",
         available: false
     },
     {
-        id: 58,
+        id: 69,
         name:  ،" بسکیت ",
         price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Soper.png",
@@ -1589,7 +1589,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 59,
+        id: 70,
         name: " کاکو",
         price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Spark.Webp",
@@ -1597,7 +1597,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 60,
+        id: 71,
         name: "  تن ماهی /چابهاربزرگ",
         price:60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Tan.jpg",
@@ -1605,7 +1605,7 @@ category: "tobacco",
         available: true
     },
     {
-        id: 61,
+        id: 72,
         name: "5xککو",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/x5.jpg",
