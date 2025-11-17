@@ -1130,5 +1130,21 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/2234.jpg",
         category: "hygiene",
         available: false
+     },
+    {
+        id: 101,
+        name: "طعم قلیان",
+        price: 80,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/4455.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 2,
+        name: "زغال قلیان",
+        price: 5,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/5536.jpg",
+        category: "tobacco",
+        available: true
     }
 ];
