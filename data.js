@@ -1122,8 +1122,8 @@ const allProducts = [
         category: "foods",
         available: true
 
-        aMSH:
-},
+
+    },
     {
         id: 1,
         name: "سفید کننده بزرگ",
