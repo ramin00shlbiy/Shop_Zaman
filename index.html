@@ -1455,6 +1455,14 @@
             
             // بستن منوی فیلتر
             closeFilterMenu();
+            
+            // اسکرول به بالای محصولات
+            setTimeout(() => {
+                document.getElementById('products-container').scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }, 300);
         }
         
         // تنظیم اعتبارسنجی فرم
