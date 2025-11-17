@@ -1266,5 +1266,61 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano1.jpg",
         category: "tobacco",
         available: true
+        },
+    {
+        id: 19,
+        name: "میلان و کتلاک/سیاه ",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano5.webp",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 20,
+        name: "میلان وکتلاک/سفید",
+        price: 30,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milanog.png",
+        category: "tobacco",
+        available: false
+    },
+    {
+        id: 21,
+        name: "مدرن سفید",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Mobern 1.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 22,
+        name: " مدرن /فولادی ",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Modern.webp",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 23,
+        name: "   مدرن /جیگری",
+        price:20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Modern.jpg",
+        category: "tobacco",
+        available: true
+    },
+    {
+        id: 24,
+        name: "  ماند /سفید",
+        price: 20,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Mond1.png",
+        category: "tobacco",
+        available: true
+},
+    {
+         id: 25,
+        name: " پودر وهاب /بزرگ",
+        price: 100,
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oab.jpg",
+        category: "tobacco",
+        available: false
     }
 ];
