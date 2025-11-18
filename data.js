@@ -1191,7 +1191,7 @@ const allProducts = [
         name: "گلرنگ",
         price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/8778.jpg",
-        category: "foods",
+        category: "hygiene",
         available: false
     },
     {
@@ -1199,8 +1199,8 @@ const allProducts = [
         name: "ترقه",
         price: 50,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Artapoper.jpg",
-        category: "foods",
-        available: true
+        category: "tobacco",
+        available: false 
     },
     {
         id: 6,
@@ -1231,7 +1231,7 @@ const allProducts = [
         name: "سفید کننده / گلرنگ بزرگ",
         price: 160,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Fbf6.jpg",
-        category: "foods",
+        category: "hygiene",
         available: false
     },
     {
@@ -1255,7 +1255,7 @@ const allProducts = [
         name: "شیشه/ پاکن",
         price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Golrang.jpg",
-        category: "foods",
+        category: "hygiene",
         available: true 
     },
     {
@@ -1271,7 +1271,7 @@ const allProducts = [
         name: " مایع ظرف شویی /گلرنگ ",
         price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Lemon.jpg",
-        category: "tobacco",
+        category: "hygiene",
         available: true
     },
     {
@@ -1359,7 +1359,7 @@ const allProducts = [
         name: " پودر وهاب /بزرگ",
         price: 100,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oab.jpg",
-        category: "tobacco",
+        category: "hygiene",
         available: true 
     },
     {
@@ -1367,7 +1367,7 @@ const allProducts = [
         name: " پودر وهاب /کوچک",
         price: 50,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oab1.jpg",
-        category: "tobacco",
+        category: "hygiene",
         available: true
     },
     {
@@ -1375,7 +1375,7 @@ const allProducts = [
         name: "آب بزرگ/ الکوزی ",
         price:70 ,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oatar 2.jpg",
-        category: "tanbacco",
+        category: "drinks",
         available: true
     },
     {
@@ -1383,7 +1383,7 @@ const allProducts = [
         name: "کاغذ/صدف",
         price: 70,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oooo.png",
-        category: "foods",
+        category: "hygiene",
         available: true 
     },
     {
@@ -1391,7 +1391,7 @@ const allProducts = [
         name:  "آب الکوزی/ بزرگ",
         price: 20,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oatar 2.jpg",
-        category: "foods",
+        category: "drinks",
         available: true
     },
     {
@@ -1399,7 +1399,7 @@ const allProducts = [
         name: " آب الکوزی /کوچک ",
         price: 10,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Otar 1.jpg",
-        category: "tanbacco",
+        category: "drinks",
         available: true
     },
     {
