@@ -1310,7 +1310,7 @@ const allProducts = [
         id: 19,
         name: "میلان و کتلاک/سیاه ",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano5.webp",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano5.png",
         category: "tobacco",
         available: true
     },
@@ -1318,7 +1318,7 @@ const allProducts = [
         id: 20,
         name: "میلان وکتلاک/سفید",
         price: 30,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milanog.png",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milanog.webp",
         category: "tobacco",
         available: true 
     },
