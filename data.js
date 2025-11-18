@@ -1144,7 +1144,7 @@ const allProducts = [
         price: 5,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/5544.jpg",
         category: "foods",
-        available: false
+        available: true 
     },
     {
         id: 49,
@@ -1256,7 +1256,7 @@ const allProducts = [
         price: 60,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Golrang.jpg",
         category: "foods",
-        available: false
+        available: true 
     },
     {
         id: 13,
@@ -1296,7 +1296,7 @@ const allProducts = [
         price: 25,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milano 2.webp",
         category: "tobacco",
-        available: false
+        available: true 
     },
     {
         id: 18,
@@ -1320,7 +1320,7 @@ const allProducts = [
         price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Milanog.png",
         category: "tobacco",
-        available: false
+        available: true 
     },
     {
         id: 21,
@@ -1360,7 +1360,7 @@ const allProducts = [
         price: 100,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oab.jpg",
         category: "tobacco",
-        available: false
+        available: true 
     },
     {
         id: 26,
@@ -1384,7 +1384,7 @@ const allProducts = [
         price: 70,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oooo.png",
         category: "foods",
-        available: false
+        available: true 
     },
     {
         id: 29,
@@ -1406,7 +1406,7 @@ const allProducts = [
         id: 31,
         name: " سکرت/پن",
         price:40,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/ Pn.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Pn.jpg",
         category: "tobacco",
         available: true
     },
@@ -1414,7 +1414,7 @@ const allProducts = [
         id: 32,
         name: "سکرت جاپانی ",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Son.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Son .jpg",
         category: "tobacco",
         available: true
        },
@@ -1425,7 +1425,7 @@ const allProducts = [
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Zezt.jpg",
 
         category: "tobacco",
-        available: false
+        available: true 
         
     }
 ];
