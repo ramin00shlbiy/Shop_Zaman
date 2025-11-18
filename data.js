@@ -1262,7 +1262,7 @@ const allProducts = [
         id: 13,
         name: "هدیه ،400 غرام/کوچک",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Heuda.png",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Hedua.png",
         category: "foods",
         available: true
     },
