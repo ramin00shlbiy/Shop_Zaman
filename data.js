@@ -1134,7 +1134,7 @@ const allProducts = [
         id: 47,
         name: " تن ماهی/مرکه",
         price: 80,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/3344.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/3344.jpeg",
         category: "foods",
         available: true
     },
@@ -1158,7 +1158,7 @@ const allProducts = [
         id: 50,
         name: "  ککو دری ملک",
         price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Dere milk.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Deremilk.jpg",
         category: "foods",
         available: true
      },
@@ -1260,9 +1260,9 @@ const allProducts = [
     },
     {
         id: 13,
-        name: "هدیه ،/کوچک",
+        name: "هدیه ،400 غرام/کوچک",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Hadea1.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Heuda.jpg",
         category: "foods",
         available: true
     },
