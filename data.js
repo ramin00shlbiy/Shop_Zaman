@@ -1214,7 +1214,7 @@ const allProducts = [
         id: 7,
         name: "سگرت ESSE / change",
         price:60,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Esse change.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Esse chang.jpg",
         category: "tobacco",
         available: true
     },
@@ -1222,7 +1222,7 @@ const allProducts = [
         id: 8,
         name: "سکرت ESSE / CHANGE",
         price: 60,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Essechange1.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Essechanga1.jpg",
         category: "tobacco",
         available: true
     },
@@ -1278,7 +1278,7 @@ const allProducts = [
         id: 15,
         name: "لیتر ",
         price:10,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/ Lighter.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Lighter.jpg",
         category: "tobacco",
         available: true
     },
