@@ -23,64 +23,33 @@
         body {
             background-color: #f5f5f5;
             color: #333;
-            padding-top: 10px; /* کاهش فضای برای هدر فشرده */
+            padding: 20px;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* هدر هوشمند */
-        .fixed-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1002;
-            background: white;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        .fixed-header.compact {
-            transform: translateY(-6px); /* هدر به بالا منتقل شود */
         }
         
         .shop-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 25px 20px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
             text-align: center;
-            transition: all 0.3s ease;
-        }
-        
-        .fixed-header.compact .shop-header {
-            opacity: 0;
-            height: 0;
-            padding: 0;
-            overflow: hidden;
         }
         
         .search-container {
             display: flex;
             align-items: center;
             gap: 10px;
-            padding: 15px 20px;
-            background: white;
-            border-bottom: 1px solid #eee;
-            transition: all 0.3s ease;
-        }
-        
-        .fixed-header.compact .search-container {
-            padding: 10px 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
         }
         
         .search-bar {
             background: white;
-            padding: 10px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             flex: 1;
@@ -113,13 +82,6 @@
             height: 50px;
             justify-content: center;
             align-items: center;
-            transition: all 0.3s ease;
-        }
-        
-        .fixed-header.compact .menu-toggle {
-            padding: 10px;
-            width: 40px;
-            height: 40px;
         }
         
         .menu-toggle span {
@@ -127,11 +89,6 @@
             height: 3px;
             background-color: #333;
             border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-        
-        .fixed-header.compact .menu-toggle span {
-            width: 20px;
         }
         
         .filter-sidebar {
@@ -143,7 +100,7 @@
             background: white;
             box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
             transition: left 0.3s ease;
-            z-index: 1003;
+            z-index: 1001;
             padding: 20px;
             overflow-y: auto;
             display: flex;
@@ -212,7 +169,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            z-index: 1002;
+            z-index: 1000;
         }
         
         .filter-overlay.open {
@@ -408,15 +365,11 @@
             background: white;
             box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
             transition: right 0.3s ease;
-            z-index: 1003;
+            z-index: 1001;
             padding: 20px;
             overflow-y: auto;
             display: flex;
             flex-direction: column;
-        }
-        
-        .cart-sidebar.open {
-            right: 0;
         }
         
         .cart-header {
@@ -442,6 +395,10 @@
             font-size: 14px;
         }
         
+        .cart-sidebar.open {
+            right: 0;
+        }
+        
         .cart-overlay {
             display: none;
             position: fixed;
@@ -450,7 +407,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
-            z-index: 1002;
+            z-index: 1000;
         }
         
         .cart-overlay.open {
@@ -764,8 +721,7 @@
     </style>
 </head>
 <body>
-    <!-- هدر هوشمند -->
-    <div class="fixed-header" id="fixedHeader">
+    <div class="container">
         <header class="shop-header">
             <h1>خوراکه فروشی ابريشم</h1>
             <p> خوراکه فروشی ابریشم با بهترین کیفیت - ما 24ساعتActiveهستیم</p>
@@ -781,9 +737,7 @@
                 <span></span>
             </div>
         </div>
-    </div>
 
-    <div class="container">
         <div class="products-grid" id="products-container">
             <!-- محصولات به صورت خودکار اینجا نمایش داده می‌شوند -->
         </div>
@@ -912,7 +866,7 @@
             <div class="filter-option" data-category="foods">خوراکی‌ها</div>
             <div class="filter-option" data-category="hygiene">بهداشتی</div>
             <div class="filter-option" data-category="snacks">کیک و کلچه</div>
-            <div class="filter-option" data-category="tobacco">دخانیات</div>
+            <div class="filter-option" data-category="tobacco">دخانیات</div> 
         </div>
     </div>
 
@@ -969,8 +923,6 @@
         let cart = [];
         let userLocation = null;
         let currentCategory = 'all';
-        let lastScrollTop = 0;
-        let isHeaderCompact = false;
         
         // صبر می‌کنیم تا DOM کاملاً لود شود
         document.addEventListener('DOMContentLoaded', function() {
@@ -979,16 +931,7 @@
             updateCart();
             
             // مدیریت جستجو
-            const searchInput = document.getElementById('searchInput');
-            searchInput.addEventListener('input', filterProducts);
-            
-            // مدیریت اسکرول برای هدر هوشمند
-            window.addEventListener('scroll', handleScroll);
-            
-            // وقتی روی نوار جستجو کلیک می‌شود
-            searchInput.addEventListener('focus', function() {
-                setHeaderCompact(true);
-            });
+            document.getElementById('searchInput').addEventListener('input', filterProducts);
             
             // سایر event listenerها
             document.getElementById('cartButton').addEventListener('click', openCart);
@@ -1032,46 +975,6 @@
             // اعتبارسنجی فیلدهای فرم
             setupFormValidation();
         });
-        
-        // مدیریت اسکرول برای هدر هوشمند
-        function handleScroll() {
-            const st = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (st > lastScrollTop) {
-                // اسکرول به پایین ⬇️ - هدر فشرده شود
-                setHeaderCompact(true);
-            } else {
-                // اسکرول به بالا ⬆️ - اگر نزدیک بالاست، هدر کامل شود
-                if (st < 100) {
-                    setHeaderCompact(false);
-                }
-            }
-            
-            // اگر به انتهای صفحه رسیدیم، هدر کامل شود
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
-                setHeaderCompact(false);
-            }
-            
-            lastScrollTop = st <= 0 ? 0 : st;
-        }
-        
-        // تنظیم حالت هدر
-        function setHeaderCompact(compact) {
-            const fixedHeader = document.getElementById('fixedHeader');
-            const body = document.body;
-            
-            if (compact && !isHeaderCompact) {
-                // حالت فشرده
-                fixedHeader.classList.add('compact');
-                body.style.paddingTop = '60px'; // کاهش padding برای هدر فشرده
-                isHeaderCompact = true;
-            } else if (!compact && isHeaderCompact) {
-                // حالت کامل
-                fixedHeader.classList.remove('compact');
-                body.style.paddingTop = '120px'; // بازگشت به padding اولیه
-                isHeaderCompact = false;
-            }
-        }
         
         // تابع برای دریافت زمان افغانستان
         function getAfghanistanTime() {
@@ -1143,9 +1046,6 @@
             
             // اضافه کردن event listeners
             attachEventListeners();
-            
-            // بازگشت به حالت کامل هنگام رندر جدید
-            setHeaderCompact(false);
         }
         
         // تابع برای اضافه کردن event listeners به محصولات
@@ -1540,14 +1440,6 @@
             
             // بستن منوی فیلتر
             closeFilterMenu();
-            
-            // اسکرول به بالای محصولات
-            setTimeout(() => {
-                document.getElementById('products-container').scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }, 300);
         }
         
         // تنظیم اعتبارسنجی فرم
