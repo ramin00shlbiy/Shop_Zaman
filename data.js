@@ -1174,7 +1174,7 @@ const allProducts = [
         id: 101,
         name: "طعم قلیان",
         price: 80,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/4455.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/4455.jpeg",
         category: "tobacco",
         available: true
     },
