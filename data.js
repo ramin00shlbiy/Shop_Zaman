@@ -1262,7 +1262,7 @@ const allProducts = [
         id: 13,
         name: "هدیه ،400 غرام/کوچک",
         price: 50,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Heuda.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/Foods/Heuda.jpg",
         category: "foods",
         available: true
     },
@@ -1390,7 +1390,7 @@ const allProducts = [
         id: 29,
         name:  "آب الکوزی/ بزرگ",
         price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Otar.jpg",
+        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oatar 2.jpg",
         category: "foods",
         available: true
     },
