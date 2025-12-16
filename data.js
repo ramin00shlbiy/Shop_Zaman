@@ -11,7 +11,7 @@ const allProducts = [
     {
         id: 2,
         name: "MLمانستر250 / MoNsTeR",
-        price: 80,
+        price: 100,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/M250.jpg",
         category: "drinks",
         available: true
@@ -19,7 +19,7 @@ const allProducts = [
     {
         id: 3,
         name: "هتک / Attack",
-        price: 80,
+        price: 70,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/ATTACK_Big.jpg",
         category: "drinks",
         available: true
@@ -43,7 +43,7 @@ const allProducts = [
     {
         id: 6,
         name: "الکوزی / Alcokozay",
-        price: 40,
+        price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/ALCOKOZAY_Z.jpg",
         category: "drinks",
         available: true
@@ -51,7 +51,7 @@ const allProducts = [
     {
         id: 7,
         name: "الکوزی / Alcokozay",
-        price: 40,
+        price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/ALCOKOZAY_S.jpg",
         category: "drinks",
         available: false
@@ -59,7 +59,7 @@ const allProducts = [
     {
         id: 8,
         name: "الکوزی / Alcokozay",
-        price: 40,
+        price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/zaman/ALCOKOZAY_A.jpg",
         category: "drinks",
         available: true
@@ -1387,14 +1387,7 @@ const allProducts = [
         available: true 
     },
     {
-        id: 29,
-        name:  "آب الکوزی/ بزرگ",
-        price: 20,
-        image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Oatar 2.jpg",
-        category: "drinks",
-        available: true
-    },
-    {
+        
         id: 30,
         name: " آب الکوزی /کوچک ",
         price: 10,
@@ -1416,12 +1409,12 @@ const allProducts = [
         price: 50,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Son .jpg",
         category: "tobacco",
-        available: true
+        available: false 
        },
     {
         id: 33,
         name: " زیست/ نازک ",
-        price: 40,
+        price: 30,
         image: "https://cdn.jsdelivr.net/gh/ramin00shlbiy/Image.Subdirector@main/tobacco/Zezt.jpg",
 
         category: "tobacco",
